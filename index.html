@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://kit.fontawesome.com/002366e4d9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <header>
+        <div> <img src="./logomusique.png" class="logo" alt=""></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Discographie</a></li>
+            <li><a href="">Gallerie</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    
+    <div class="welcomePlayer">
+        <h1>Music Player</h1>
+    </div>
+
+    <div class="content">
+        <section class="SongContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <div class="firstAudio">
+                <img src="./playimage.png" id="playbutton" alt="sjdkjhdsd" onclick="clickToPlay();">
+                <img src="./pauseimage.png" id="pausebutton" onclick="clickToPause();"></i>
+                <audio id="myaudio">
+                    <source src="./miguel-be-my-vixen.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+        <section class="SongContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <div class="firstAudio">
+                <img src="./playimage.png" id="playbutton" alt="sjdkjhdsd" onclick="clickToPlay();">
+                <img src="./pauseimage.png" id="pausebutton" onclick="clickToPause();"></i>
+                <audio id="myaudio">
+                    <source src="./miguel-be-my-vixen.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+        <section class="SongContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <div class="firstAudio">
+                <img src="./playimage.png" id="playbutton" alt="sjdkjhdsd" onclick="clickToPlay();">
+                <img src="./pauseimage.png" id="pausebutton" onclick="clickToPause();"></i>
+                <audio id="myaudio">
+                    <source src="./miguel-be-my-vixen.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+        <section class="SongContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <div class="firstAudio">
+                <img src="./playimage.png" id="playbutton" alt="sjdkjhdsd" onclick="clickToPlay();">
+                <img src="./pauseimage.png" id="pausebutton" onclick="clickToPause();"></i>
+                <audio id="myaudio">
+                    <source src="./miguel-be-my-vixen.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+        <section class="SongContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <div class="firstAudio">
+                <img src="./playimage.png" id="playbutton" alt="sjdkjhdsd" onclick="clickToPlay();">
+                <img src="./pauseimage.png" id="pausebutton" onclick="clickToPause();"></i>
+                <audio id="myaudio">
+                    <source src="./miguel-be-my-vixen.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+        <section class="SongContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <div class="firstAudio">
+                <img src="./playimage.png" id="playbutton" alt="sjdkjhdsd" onclick="clickToPlay();">
+                <img src="./pauseimage.png" id="pausebutton" onclick="clickToPause();"></i>
+                <audio id="myaudio">
+                    <source src="./miguel-be-my-vixen.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+
+    </div>
+<footer> Property of nobody</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function clickToPlay() {
+            var myaudio = document.getElementById('myaudio');
+            $(myaudio)[0].play();
+            $("#playbutton").hide();
+            $("#pausebutton").fadeIn();
+        }
+
+        function clickToPause() {
+            var myaudio = document.getElementById('myaudio');
+            $(myaudio)[0].pause();
+            $("#pausebutton").hide();
+            $("#playbutton").fadeIn();
+        }
+    </script>
+</body>
+<!-- <body>
+    <section class="mainframe">
+        <section class="mainContainer">
+            <img src="./miguel.jpg" alt="" class="cover">
+            <div class="titleInfos">
+                <h1 class="title">Be My Vixen</h1>
+                <h2 class="artist">Miguel</h2>
+                <h3 class="genre">R&B</h3>
+            </div>
+            <audio src="./miguel-be-my-vixen.mp3" controls=""> </audio>
+            <div class="player">
+                <i class="fas fa-angle-double-left"></i>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-angle-double-right"></i> </div>
+            <div class="favactions">
+                <i class="far fa-star"></i>
+                <i class="fas fa-broadcast-tower"></i>
+                <i class="fas fa-list"></i>
+            </div>
+        </section>
+    </section>
+</body> -->
+
+</html>
